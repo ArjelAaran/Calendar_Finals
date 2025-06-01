@@ -67,6 +67,15 @@ body {
   box-shadow: var(--box-shadow-lg);
 }
 
+.dialog__header {
+  border-bottom: 2px solid var(--color-green-600);
+}
+
+.month-calendar__day.selected {
+  outline: 2px solid var(--color-green-600);
+  outline-offset: -2px;
+}
+
 .input--fill {
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-300);
@@ -80,10 +89,28 @@ body {
   }
 }
 
-.month-calendar__day-label.today {
-  background-color: var(--color-blue-500);
+.month-calendar__day-label.today,
+.week-calendar__day-of-week-button.today {
+  background-color: var(--color-green-600);
   color: var(--color-white);
   border-radius: 9999px;
+}
+
+.mini-calendar__day--selected {
+  background-color: var(--color-green-600);
+  color: var(--color-white);
+  border-radius: 9999px;
+}
+
+.status--completed {
+  background-color: var(--color-green-600);
+  color: var(--color-white);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+}
+.week-calendar__cell {
+  border-top: 1px solid #d1fae5; /* light green-ish */
 }
 
 :root {
